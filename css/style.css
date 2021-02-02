@@ -186,7 +186,7 @@ caption { /*Caption styling for the table on the About Me Page*/
 }
 
 table { /*Table styling for the table on the About Me Page*/
-  position:relatiev;
+  position:relative;
   text-align: center;
   margin: 30px auto 20px;
   border-spacing: 10px;
@@ -298,7 +298,7 @@ form {
 }
 
 .contact-footer__info {
-  display: relative;
+  position: relative;
   width: 100%;
   background-color: var(--p-color);
   text-align: center;
