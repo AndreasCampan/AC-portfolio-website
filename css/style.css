@@ -166,11 +166,6 @@ a.page-nav:hover::before {/* Navigation link transition*/
   border-radius: 50%;
 }
 
-.home-animation__computer {
-  width: 500px;
-  height: 500px;
-}
-/* ------------------------ About Page Selectors ------------------------ */
 .about-textbox {
   width: 100%;
   height: auto;
@@ -195,53 +190,6 @@ table { /*Table styling for the table on the About Me Page*/
 
 tfoot { /*Footer styling for the table on the About Me Page*/
   font-size: 0.8rem;
-}
-
-.sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0,50px)
-  }
-  to {
-    transform: translate(200px, 50px)
-  }
-}
-
-@keyframes color-change {
-  0% {
-    fill: #fdffbf;
-  }
-  50% {
-    fill: #f0ff67;
-  }
-  100% {
-    fill: #fffb00;
-  }
 }
 
 /* ------------------------ Work Page Selectors ------------------------ */
