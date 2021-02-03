@@ -24,6 +24,7 @@ html, body {
           flex-direction: column;
   height: 100%;
   margin: 0;
+  min-width: 320px;
 }
 
 h1 {
@@ -135,8 +136,8 @@ p {
 
 .page-header__item {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 200px;
-          flex: 1 1 200px;
+      -ms-flex: 1 1 100px;
+          flex: 1 1 100px;
   margin-right: 1rem;
 }
 
@@ -395,5 +396,12 @@ button:hover, button:focus,
 
   h1 {
     font-size: 1.3rem;
+  }
+
+  .navigation__menuitems li {
+    display: inline-block;
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+    list-style-type:  none;
   }
 }

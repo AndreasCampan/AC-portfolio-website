@@ -17,6 +17,7 @@ html, body {
   flex-direction: column;
   height: 100%;
   margin: 0;
+  min-width: 320px;
 }
 
 h1 {
@@ -336,5 +337,12 @@ button:hover, button:focus,
 
   h1 {
     font-size: 1.3rem;
+  }
+
+  .navigation__menuitems li {
+    display: inline-block;
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+    list-style-type:  none;
   }
 }
