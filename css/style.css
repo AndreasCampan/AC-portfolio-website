@@ -81,6 +81,7 @@ p {
   display:flex;
   width: 100%;
   height: 55px;
+  min-height: 55px;
   padding: 0.5em;
   margin-bottom: 10px;
   background-color: var(--p-color);
@@ -258,7 +259,7 @@ form {
 }
 
 .contact-form__box {
-  max-width: 500px;
+  max-width: 300px;
   margin: 0 auto;
   text-align: left;
 }
@@ -305,8 +306,8 @@ button:hover, button:focus,
 }
 
 .textarea-message{
-  min-width: 500px;
-  max-width: 700px;
+  min-width: 300px;
+  max-width: 300px;
   min-height: 150px;
   max-height: 500px;
 }
