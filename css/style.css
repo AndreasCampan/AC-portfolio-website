@@ -3,7 +3,7 @@
   --p-color: #383838;
   --s-color: #FC472F;
   --linktext-color: #2fe4fc;
-  --font-weight-500: 500;
+  --font-weight1: 500;
 }
 
 /* ------------------------ All Page Declarations ------------------------ */
@@ -27,7 +27,7 @@ h1 {
 
 h2 {
   font-size: 1.3rem;
-  font-weight: var(--font-weight-500);
+  font-weight: var(--font-weight1);
   padding: 0px;
   margin: -0.3em 0 0.3em 0;
 }
@@ -35,7 +35,7 @@ h2 {
 
 a {/* General link styling */
   color: var(--linktext-color);
-  font-weight: var(--font-weight-500);
+  font-weight: var(--font-weight1);
   text-decoration: none;
   letter-spacing: 0.1rem;
 }
@@ -204,7 +204,7 @@ a.page-nav:hover::before {/* Navigation link transition*/
 caption { /*Caption styling for the table on the About Me Page*/
   font-size: 1.2rem;
   margin-bottom: 1em;
-  font-weight: var(--font-weight-500);;
+  font-weight: var(--font-weight1);;
   text-decoration: underline;
 }
 
@@ -288,7 +288,7 @@ button,
   border: none;
   display: inline-block;
   font-family: inherit;
-  font-weight: var(--font-weight-500);
+  font-weight: var(--font-weight1);
   background-color: var(--s-color);
   color: #000000;
   text-decoration: none;
