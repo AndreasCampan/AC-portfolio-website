@@ -66,7 +66,7 @@ li {
 p {
   line-height: 1.5;
   text-align:center;
-  margin-left: 30px;
+  margin: 20px;
 }
 
 /* ------------------------ All Pages Header ------------------------ */
@@ -213,10 +213,14 @@ caption { /*Caption styling for the table on the About Me Page*/
 table { /*Table styling for the table on the About Me Page*/
   position:relative;
   text-align: center;
-  margin: 30px auto 20px;
+  margin: 20px auto;
   border-spacing: 10px;
+  min-width: 300px;
 }
 
+td, th {
+  border-bottom: 2px solid var(--s-color)
+}
 
 tfoot { /*Footer styling for the table on the About Me Page*/
   font-size: 0.8rem;
@@ -325,7 +329,6 @@ button:hover, button:focus,
     grid-row: auto / auto;
   }
   .home-profilebox {
-    padding-right: 20px;
     margin: 5px auto
   }
   
@@ -335,7 +338,6 @@ button:hover, button:focus,
   }
   
   .about-textbox {
-    padding-right: 20px;
     margin: 50px auto;
   }
 }
@@ -371,17 +373,14 @@ button:hover, button:focus,
   }
 
   .home-profilebox {
-    padding-right: 20px;
     margin: 5px auto
   }
   
   .profile__portrait {
     padding-left: 10px;
-    
   }
   
   .about-textbox {
-    padding-right: 20px;
-    margin: 10px auto;
+    margin: 50px auto;
   }
 }
