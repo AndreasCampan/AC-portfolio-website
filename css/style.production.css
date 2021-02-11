@@ -211,12 +211,13 @@ a.page-nav:hover::before {/* Navigation link transition*/
 /* ------------------------ Home Page Selectors ------------------------ */
 .home-profilebox {
   position: relative;
-  display: inherit;
   max-width: 700px;
   height: auto;
   width: 100%;
-  margin: 3em auto;
+  margin: 2em auto;
   text-align: center;
+  -webkit-transition: ease-in-out all 0.3s;
+  transition: ease-in-out all 0.3s;
 }
 
 .profile__portrait {
@@ -224,15 +225,19 @@ a.page-nav:hover::before {/* Navigation link transition*/
   width: 35%;
   max-width: 320px;
   height: auto;
-  margin-right: 40px;
+  margin-right: 30px;
   border-radius: 50%;
+  -webkit-transition: ease-in-out all 0.3s;
+  transition: ease-in-out all 0.3s;
 }
 
 .about-textbox {
   max-width: 650px;
   height: auto;
-  margin: 6em auto 3em;
+  margin: 3em auto 3em;
   text-align: center;
+  -webkit-transition: ease-in-out all 0.3s;
+  transition: ease-in-out all 0.3s;
 }
 
 caption { /*Caption styling for the table on the About Me Page*/
@@ -316,6 +321,7 @@ form {
   width: 100%;
   background-color: #383838;
   text-align: center;
+  bottom: 78px;
   padding-bottom: 10px;
   color: #fffefe;
   line-height: 1.5;
@@ -379,6 +385,20 @@ button:hover, button:focus,
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+  .home-profilebox {
+    padding-right: 20px;
+    margin: 5px auto
+  }
+  
+  .profile__portrait {
+    padding-left: 10px;
+    
+  }
+  
+  .about-textbox {
+    padding-right: 20px;
+    margin: 50px auto;
+  }
 }
 @media all and (min-width: 500px) and (max-width: 750px){
   .projects {
@@ -411,5 +431,20 @@ button:hover, button:focus,
     margin-left: 0.5rem;
     font-size: 1.2rem;
     list-style-type:  none;
+  }
+
+  .home-profilebox {
+    padding-right: 20px;
+    margin: 5px auto
+  }
+  
+  .profile__portrait {
+    padding-left: 10px;
+    
+  }
+  
+  .about-textbox {
+    padding-right: 20px;
+    margin: 10px auto;
   }
 }
