@@ -266,6 +266,29 @@ a.work-projects__links{
 form {
   display: table;
   padding-bottom: 30px;
+  font-size: 1.1em;
+}
+
+/* A wrap for each form element */
+.input-wrap{
+  margin-bottom: 2px;
+}
+
+label{
+  line-height: 1.8em;
+}
+
+/* styling for the * on the form */
+.red{
+  color: var(--s-color);
+}
+
+/* styling for the error message on the form*/
+.error{
+  display: inline-block;
+  color: red;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .contact-form__box {

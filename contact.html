@@ -57,23 +57,33 @@
     <!--Main content of the page-->
     <main>
       <!-- Contact form for clients-->
-      <form class="contact-form__box" action="/contact.php" method="post" id="contact-form" name="contact-form">
+      <form class="contact-form__box" id="contact-form" name="contact-form" novalidate>
         <h1>Contact Form</h1>
-        <label for="fname">*First Name:</label>
-        <input type="text" name="fname" id="fname" autofocus required><br>
-        <br>
-        <label for="lname">*Last Name:</label>
-        <input type="text" name="lname" id="lname" required><br>
-        <br>
-        <label for="telehone">Telephone:</label>
-        <input type="tel" name="telehone" id="telehone"><br>
-        <br>
-        <label for="email">*Your Email:</label>
-        <input type="email" name="email" placeholder="example@email.com" id="email" required><br>
-        <br>
-        <label for="message">*Message:</label>
-        <textarea class="textarea-message" maxlength="500" placeholder="Max 500 characters" id="message" required rows="8"></textarea><br>
-        <br>
+        <div class="input-wrap">
+          <label for="fname"><span class="red">*</span> First Name:</label>
+          <input type="text" name="fname" id="fname" autofocus />
+          <div class="error"></div>
+        </div>
+        <div class="input-wrap">
+          <label for="lname"><span class="red">*</span> Last Name:</label>
+          <input type="text" name="lname" id="lname" />
+          <div class="error"></div>
+        </div>
+        <div class="input-wrap">
+          <label for="telephone">Telephone:</label>
+          <input type="tel" name="telephone" id="telephone" />
+          <div class="error"></div>
+        </div>
+        <div class="input-wrap">
+          <label for="email"><span class="red">*</span> Email:</label>
+          <input type="email" name="email" placeholder="example@email.com" id="email">
+          <div class="error"></div>
+        </div>
+        <div class="input-wrap">
+          <label for="message"><span class="red">*</span> Message:</label>
+          <textarea class="textarea-message" maxlength="500" placeholder="Max 500 characters" id="message" rows="8"></textarea>
+          <div class="error"></div>
+        </div>
         <button type="submit"> Submit </button>
       </form>
     </main>
@@ -99,5 +109,6 @@
           <img src="img/twitter-logo.svg" alt="Twitter logo. Link leading to twitter profile page." class="footer-logos"></a>
       </div>
     </footer>
+  <script src="js/script.js"></script>
   </body>
 </html>
